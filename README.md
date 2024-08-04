@@ -1,60 +1,52 @@
-## Objective:
-HomeSwap is a full-stack web application designed to revolutionize the home exchange experience. Inspired by the success of platforms like Airbnb, HomeSwap aims to provide a seamless and secure platform for users to list their properties, discover unique homes around the world, and arrange home swaps with other members. By promoting sustainable travel and cultural exchange, HomeSwap encourages users to immerse themselves in new destinations while minimizing their environmental impact. HomeSwap offers an opportunity to gain hands-on experience in building a complex, real-world application using modern web technologies. Through this project, students will learn to tackle challenges such as user authentication, property listing management, search and filtering, messaging, calendar integration, and more.
+## Objective
+HomeSwap is a full-stack web application designed to provide a platform for users to list, discover, and book properties. Inspired by platforms like Airbnb, this project aims to create a functional property rental system within a 3-week timeframe. The application will focus on core features such as user authentication, property management, booking system, reviews, and secure payments. Through this project, developers will gain hands-on experience in building a real-world application using modern web technologies, addressing challenges in user authentication, database management, search functionality, and payment integration.
 
 ## Key Features
 ### User Authentication and Profiles
-- Secure user registration and authentication system
-- User profile management, including personal information, preferences, and verification
-- Integration with third-party authentication providers (e.g., Google, Facebook)
+- Secure user registration and login system
+- User profile management with editable fields (Name, Email, Profile picture, Bio)
+- JWT-based authentication
 
 ### Property Listing Management
-- Create, update, and manage property listings with detailed descriptions, photos, and amenities
-- Set availability dates and swap preferences (e.g., location, duration, property type)
-- Review and approval process for new listings
+- Create, edit, and delete property listings
+- Property details include title, description, price, location, amenities, and house rules
+- Image upload for property photos
 
-### Search and Filtering
-- Advanced search and filtering capabilities based on location, dates, property type, and amenities
-- Integration with mapping services for location-based searches
-- Save and manage search preferences and favorites
+### Search and Discovery
+- Property listing page with grid view
+- Basic search functionality with filters (location, price, number of guests, amenities)
+- Detailed property view with photo gallery, description, and availability calendar
 
-### Messaging and Communication
-- Real-time messaging system for users to communicate and coordinate home swaps
-- Notification system for new messages, swap requests, and updates
-- Integration with email and push notifications
-
-### Calendar and Availability Management
-- Interactive calendar for managing property availability and swap requests
-- Ability to block dates and set minimum/maximum swap durations
-- Synchronization with external calendar services (e.g., Google Calendar, iCalendar)
+### Booking System
+- Booking form with date picker, guest selection, and price calculation
+- Booking confirmation process
+- User trips page to view booking history
 
 ### Reviews and Ratings
-- User-generated reviews and ratings for properties and hosts
-- Display review summaries and ratings on property listings
-- Moderation and reporting system for inappropriate reviews
+- Submit reviews with ratings and written feedback
+- Display reviews on property listings
+- Calculate and update property ratings
 
-### Payment and Financial Management
-- Secure payment processing for any applicable fees or service charges
-- Integration with popular payment gateways (e.g., Stripe, PayPal)
-- Accounting and reporting tools for financial management
+### Host Dashboard
+- Manage property listings
+- View and respond to bookings
 
-### Mobile Responsiveness and Progressive Web App (PWA)
-- Responsive design for optimal user experience across devices
-- Progressive Web App (PWA) features for improved performance and offline functionality
-- Native mobile app development (optional stretch goal)
+### Payment Processing
+- Secure payment handling using Stripe
+- Payment page for processing booking payments
 
-### Analytics and Reporting
-- Comprehensive analytics and reporting dashboard for administrators
-- Insights into user engagement, property listing performance, and financial metrics
-- Data visualization tools for better decision-making
+### Responsive Design
+- Mobile-friendly user interface
+- Optimized for various device sizes
 
-### Multilingual Support
-- Support for multiple languages and localization
-- Automatic translation of user-generated content (e.g., property descriptions, reviews)
+### Performance Optimization
+- Lazy loading for property images
+- Efficient pagination for property listings
+- Optimized database queries
 
-### Social Integration and Sharing
-- Integration with popular social media platforms for sharing and discovery
-- Ability to share property listings and home swap experiences on social media
-
-### Community Building and Events
-- Forums or community sections for users to connect and share experiences
-- Event management system for organizing meetups, activities, or cultural events
+### Deployment and DevOps
+- Production environment setup
+- Deployment to cloud platforms (Vercel for frontend, Heroku for backend)
+- MongoDB Atlas for production database
+- Environment variable management
+- Basic database backup procedure
