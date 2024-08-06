@@ -1,0 +1,115 @@
+/* footer.css */
+.footer {
+    background-color: #1a1a1b;
+    padding: 40px 0;
+    color: #fcfcfc;
+    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto */
+  }
+  
+  .footerContainer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footerSection {
+    flex: 1;
+    max-width: 250px;
+  }
+  
+  .footerSection h4 {
+    font-size: 18px;
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    font-weight: bold;
+  }
+  
+  .footerSection h1 {
+    font-size: 28px;
+    font-family: 'Roboto', var(--rio-footer-font-family), var(--rio-body-font-family), sans-serif;
+    color: #e0e0e0;
+  }
+  .footerSection p {
+    font-size: 14.6px;
+    font-family: 'Roboto', var(--rio-footer-font-family), var(--rio-body-font-family), sans-serif;
+    color: #8a8787;
+  }
+  .footerSection ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerSection ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footerSection ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footerSection ul li a:hover {
+    color: #007bff;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .socialIcons li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .socialIcons li a:hover {
+    background-color: #e4e7e9;
+  }
+  
+    .footerBottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    }
+   
+  .footerBottom p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: left;
+    }
+  
+    .footerSection {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+  
+    .socialIcons {
+      justify-content: left;
+    }
+  
+    .footerDivider {
+      width: 100%;
+      border: none;
+      border-top: 1px solid #e9ecef;
+      margin: 0 0 30px 0;
+    }
+    
+  }
+  
