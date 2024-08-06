@@ -2,6 +2,7 @@
   "name": "airbnb_clone",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,6 +14,14 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1"
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2",
   },
   "devDependencies": {
     "eslint": "^8",
