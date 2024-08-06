@@ -1,8 +1,11 @@
 import express from "express";
 import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 import User from "../../backend/models/User.js";
 
 const router = express.Router();
+
+const SECRET_KEY = process.env.SECRET_KEY;
 
 // Register new user
 router.post("/register", async (req, res) => {
@@ -30,8 +33,21 @@ router.post("/register", async (req, res) => {
       password: encryptedPassword,
     });
 
-    // Return the new user
-    res.status(201).json(user);
+    // Create a token
+    const token = jwt.sign({ user_id: user._id, email }, SECRET_KEY, {
+      expiresIn: "2h",
+    });
+
+    // Save the token
+    user.token = token;
+
+    // Return the new user (excluding the password)
+    res.status(201).json({
+      _id: user._id,
+      username: user.username,
+      email: user.email,
+      token: user.token,
+    });
   } catch (err) {
     console.error(err);
     res.status(500).send("Internal Server error");
